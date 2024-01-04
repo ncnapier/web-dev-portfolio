@@ -202,6 +202,13 @@
 }
 
 /* 2xl */
-/* @media (min-width: 1536px) {
-   
-}  */
+@media (min-width: 1536px) {
+   .featured__img-container {
+        margin-top: 2rem;
+        grid-gap: 2rem;
+    }
+
+   .featured__img-container {
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+} 
