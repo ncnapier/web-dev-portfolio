@@ -27,7 +27,7 @@
 
 .work__img-wrapper::after {
     content: '';
-    background-color: rgba(79, 70, 229, 0.4);
+    background-color: rgba(150, 179, 171, 0.4);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -38,7 +38,7 @@
 }
 
 .work__img-wrapper:hover::after{
-    background-color: rgba(79, 70, 229, 0.3);
+    background-color: rgba(150, 179, 171, 0.3);
 }
 
 .work__project:not(:last-child) {
