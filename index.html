@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="description" content="My portfolio website">
+    <meta name="keywords" content="Nathaniel Napier, web design, html, css">
+    <title>Nathaniel Napier</title>
+  </head>
+  <body>
+    <header class="header container">
+      <nav>
+        <ul class="header__menu">
+          <li>
+            <a class="header__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="header__link" href="#work">Work</a>
+          </li>
+          <li>
+            <a class="header__link" href="#contact">Contact</a>
+          </li>
+          <li class="header__line"></li>
+          <li>
+            <button area-label="toggle theme" id="theme-toggle" class="header__sun">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a class="header__resume btn" href="https://ncnapier.github.io/resume/" target="_blank">Resume</a>
+          </li>
+        </ul>
+        <button area-label="mobile nav button" class="header__bars">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li>
+            <a class="mobile-nav__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#work">Work</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#contact">Contact</a>
+          </li>
+          <li class="mobile-nav__link-line"></li>
+          <li>
+            <button area-label="toggle theme" id="theme-toggle" class="mobile-nav__sun">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a class="mobile-nav__btn btn" href="#">Resume</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- End of Mobile Navigation -->
+    <main>
+      <section class="hero container">
+          <img 
+          class="hero__img"
+          src="./public/profile.jpg"
+          alt="Profile picture"
+        />
+        <h2 class="hero__subtitle">Hello, I'm Nathaniel</h2>
+        <h1 class="hero__title">
+          FULL-STACK <br />
+          WEB DEVELOPER
+        </h1>
+        <p class="hero__description">
+          A <strong>full-stack web developer</strong> with a background in
+          analytical sciences. Experienced in
+          <strong>JavaScript, HTML, CSS, C#, node.js, Python, React</strong>. Passionate
+          about making positive social impact through resource creation and web
+          development. Let's build your brand's web presence together.
+        </p>
+        <a class="hero__btn btn" href="mailto:nattydevs@gmail.com"
+        target="_blank">Reach Out</a>
+      </section>
+      <section id="about" class="about container section">
+        <div class="about__content">
+          <h2 class="about__title">About</h2>
+          <p class="about__description">
+            As an analytical scientist with a decade-long background in biochemistry and analytical sciences, I bring a unique perspective to the world of programming. My experience in drug discovery and mass spectrometry has honed my ability to dissect complex problems, work independently, and collaborate seamlessly within interdisciplinary teams. These skills, cultivated in the precision-demanding field of analytical science, provide a solid foundation for my approach to programming-- offering a meticulous and detail-oriented perspective to every project I undertake.
+          </p>
+          <p class="about__description">
+            I am proficient in HTML, CSS, JavaScript, Python, and a suite web development tools. Whether crafting elegant and responsive websites or delivering beautifully crafter newsletters, my programming skills showcase versatility and creativity. From front-end design to back-end functionality, I bring a holistic understanding of the development process, ensuring each project is not just a collection of code but a seamless, user-friendly experience.
+          </p>
+          <p class="about__description">
+            I'm here to unlock the potential of your digital presence with my services. I specialize in developing fully functional and responsive websites that transcend device boundaries, offering an optimal user experience. Additionally, I provide HTML newsletter services, delivering visually striking and engaging messages that cut through the digital noise. With a commitment to precision and adaptability, I create digital solutions that captivate, resonate, and elevate your online presence.
+          </p>
+          <hr class="about__hr" />
+          <h3 class="about__subtitle">Technologies</h3>
+          <div class="about__ul-container">
+            <ul class="about__ul">
+              <li class="about__list">JavaScript</li>
+              <li class="about__list">HTML</li>
+              <li class="about__list">CSS</li>
+              <li class="about__list">C#</li>
+              <li class="about__list">Python</li>
+            </ul>
+            <ul class="about__ul">
+              <li class="about__list">node.js</li>
+              <li class="about__list">ReactJS</li>
+              <li class="about__list">OOP</li>
+              <li class="about__list">Web Accessibility</li>
+            </ul>
+          </div>
+        </div>
+        <div class="about__img-wrapper">
+            <img loading="lazy"
+            class="about__img"
+            src="./public/about.jpeg"
+            alt="Nathaniel Napier"
+          />
+        </div>
+      </section>
+      <section class="featured container section">
+        <h3 class="featured__subtitle">Featured Project</h3>
+        <div class="featured__wrapper">
+          <h2 class="featured__title">DMPK Lab Manager</h2>
+          <a area-label="link to featured project website" class="featured__link" href="https://github.com/ncnapier/react-lab-manager-reservation-test/blob/main/README.md"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M19.902 4.098a3.75 3.75 0 0 0-5.304 0l-4.5 4.5a3.75 3.75 0 0 0 1.035 6.037.75.75 0 0 1-.646 1.353 5.25 5.25 0 0 1-1.449-8.45l4.5-4.5a5.25 5.25 0 1 1 7.424 7.424l-1.757 1.757a.75.75 0 1 1-1.06-1.06l1.757-1.757a3.75 3.75 0 0 0 0-5.304Zm-7.389 4.267a.75.75 0 0 1 1-.353 5.25 5.25 0 0 1 1.449 8.45l-4.5 4.5a5.25 5.25 0 1 1-7.424-7.424l1.757-1.757a.75.75 0 1 1 1.06 1.06l-1.757 1.757a3.75 3.75 0 1 0 5.304 5.304l4.5-4.5a3.75 3.75 0 0 0-1.035-6.037.75.75 0 0 1-.354-1Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </div>
+        <p class="featured__description">
+          Allows for intra-laboratory communication from desktop or smartphone. Users can check the current status of lab equipment, as well as schedule time on equipment and request repairs. DMPK Lab Manager serves as a central hub for team members to communicate about projects, instrument status, scheduling, and collaboration- eliminating the need to consult multiple resources.
+        </p>
+        <div class="featured__info-container">
+          <div>
+            <h3 class="featured__label">Tech Stack</h3>
+            <ul class="featured__tech-stack">
+              <li class="featured__info">HTML</li>
+              <li class="featured__info">CSS</li>
+              <li class="featured__info">JavaScript</li>
+              <li class="featured__info">MongoDB</li>
+              <li class="featured__info">NodeJS</li>
+              <li class="featured__info">Express</li>
+              <li class="featured__info">ReactJS</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="featured__label">Project Type</h3>
+            <p class="featured__info">Fullstack Web App</p>
+          </div>
+          <div>
+            <h3 class="featured__label">Timeline</h3>
+            <p class="featured__info">July 2022 - Present</p>
+          </div>
+        </div>
+        <div class="featured__img-container">
+          <div class="featured__img-wrapper">
+              <img loading="lazy" src="./public/DMPKold.png" alt="project picture" />
+          </div>
+          <div class="featured__img-wrapper">
+              <img loading="lazy" src="./public/DMPK1.png" alt="project picture" />
+          </div>
+          <div class="featured__img-wrapper">
+              <img loading="lazy" src="./public/DMPK2.png" alt="project picture" />
+          </div>
+          <div class="featured__img-wrapper">
+              <img loading="lazy" src="./public/DMPK4.png" alt="project picture" />
+          </div>
+          
+        </div>
+      </section>
+      <section id="work" class="work container section">
+        <h2 class="work__title">Projects</h2>
+        <p class="work__description">
+           Below you’ll find some of the services I offer as well as projects I have worked on. For more examples of my work- please visit my <a href="https://github.com/ncnapier" target="_blank"><strong>Github</strong></a> page.
+        </p>
+        <div class="work__container">
+          <!-- Project 1 -->
+          <h3 class="work__project-title">Websites</h3>
+          <div class="work__img-wrapper work__image1">
+              <img loading="lazy" src="public/tennspace.png" alt="project 1" />
+          </div>
+          <div class="work__project work__content1">
+            <h3 class="work__project-subtitle">Websites</h3>
+            <p class="work__project-description1">
+              Modern, functional websites aren't just digital storefronts- they're dynamic tools empowering small businesses and nonprofits to reach a wider audience and foster meaningful connections. A well-crafted website serves as a 24/7 ambassador, offering visibility, credibility, and accessibility. It acts as a gateway, welcoming potential customers, donors, or supporters into an engaging online experience. For small enterprises, it's a cost-effective way to expand reach, share your mission, and engage with your community. 
+            </p>
+            <p class="work__project-description2">
+              As a web developer, my approach centers on creating responsive, adaptable websites. I prioritize user experience by ensuring that every site I craft scales seamlessly on any screen, from desktops to mobile devices. Moreover, I integrate search engine optimization (SEO) techniques and web accessibility standards to ensure inclusivity and visibility. By adhering to web accessibility guidelines, I ensure that every visitor, regardless of ability, enjoys a seamless browsing experience. My commitment lies in building not just websites, but digital experiences that resonate, engage, and serve diverse audiences effectively.
+            </p>
+            <a class="btn work__project-btn" href="#">More</a>
+          </div>
+          
+          <!-- Project 2 -->
+          <h3 class="work__project-title">HTML Newsletters</h3>
+          <div class="work__img-wrapper work__image2">
+              <img loading="lazy" src="public/githubscreenshot.png" alt="project 2" />
+          </div>
+          <div class="work__project work__content2">
+            <h3 class="work__project-subtitle">HTML Newsletters</h3>
+            <p class="work__project-description1">
+              Properly structured HTML newsletters stand as a powerful tool in fostering engagement and connection. These newsletters aren't just emails- they're vibrant, visually appealing messages that cut through the clutter of inboxes, grabbing attention and driving action. A well-crafted HTML newsletter offers a dynamic platform to share stories, promotions, or updates. These newsletters serve as a direct line to clients, customers, or supporters, nurturing relationships and building brand loyalty.
+            </p>
+            <p class="work__project-description2">
+              My approach to HTML newsletters embodies precision and adaptability. I specialize in crafting newsletters that are not only visually striking but also responsive across various devices and email clients. Each newsletter I design prioritizes seamless compatibility, ensuring that the message retains its impact regardless of where it's viewed. I focus on clean, structured code that adheres to industry standards, optimizing deliverability and engagement. I aim to deliver newsletters that not only capture attention but also inspire action and meaningful engagement.
+            </p>
+            <a class="btn work__project-btn" href="#">More</a>
+          </div>
+          <!-- Project 2 -->
+          <h3 class="work__project-title">Python Farming Simulator</h3>
+          <div class="work__img-wrapper work__image3">
+              <img loading="lazy" src="public/Screen Shot 2023-12-31 at 10.20.08 PM.png" alt="project 3" />
+          </div>
+          <div class="work__project work__content3">
+            <h3 class="work__project-subtitle">Python Farming Simulator</h3>
+            <p class="work__project-description1">
+              Dive into the charm of my Stardew Valley-inspired Python project, crafted with passion and coded with precision using Pygame. In this pixelated world, players experience the joys of farming life, from cultivating crops under changing skies to bartering goods at the local market. The game captures the essence of the beloved farming simulation genre, providing players with a hands-on experience of tending to a virtual farm.
+            </p>
+            <p class="work__project-description2">
+              Beyond the engaging gameplay, this project is a testament to my proficiency in Python and game development. As I continue to evolve this creation by replacing borrowed assets with my hand-drawn renders, it showcases not just my coding skills but my commitment to bringing imagination to life in the digital realm. It's more than a game- it's a journey into my passion for programming beyond the confines of web development.
+            </p>
+            <a class="btn work__project-btn" target="_blank" href="https://github.com/ncnapier/pygame-farm-sim">More</a>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact container section">
+        <h2 class="contact__title">Get In Touch</h2>
+        <p class="contact__description">
+          Whether you are looking to start a new project, want to inquire about
+          a quote, or set up a consultation- my inbox is always open. Reach out
+          and I will get back to you as soon as possible. I look forward to
+          working with you!
+        </p>
+        <a
+          class="contact__btn btn"
+          href="mailto:nattydevs@gmail.com"
+          target="_blank"
+          >Reach Out</a
+        >
+      </section>
+    </main>
+    <footer class="footer container section">
+      <h3 class="footer__title">2023 nattydevs</h3>
+    </footer>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
